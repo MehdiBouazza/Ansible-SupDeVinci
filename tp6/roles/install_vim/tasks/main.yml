@@ -1,0 +1,5 @@
+---
+- name: installation de vim
+  apt:
+    name: vim
+    state: "{{ vim_state }}"

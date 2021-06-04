@@ -1,0 +1,11 @@
+---
+- name: create system user
+  user:
+    name: sysuserapache
+    uid: 567
+  register: recap
+
+- name: ok
+  debug:
+    msg: "{{recap}}"
+
